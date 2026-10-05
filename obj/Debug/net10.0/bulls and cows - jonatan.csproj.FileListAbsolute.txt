@@ -1,0 +1,15 @@
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/bin/Debug/net10.0/bulls and cows - jonatan
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/bin/Debug/net10.0/bulls and cows - jonatan.deps.json
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/bin/Debug/net10.0/bulls and cows - jonatan.runtimeconfig.json
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/bin/Debug/net10.0/bulls and cows - jonatan.dll
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/bin/Debug/net10.0/bulls and cows - jonatan.pdb
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/bulls and cows - jonatan.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/bulls and cows - jonatan.AssemblyInfoInputs.cache
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/bulls and cows - jonatan.AssemblyInfo.cs
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/bulls and cows - jonatan.csproj.CoreCompileInputs.cache
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/bulls and cows - jonatan.sourcelink.json
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/bulls and cows - jonatan.dll
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/refint/bulls and cows - jonatan.dll
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/bulls and cows - jonatan.pdb
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/bulls and cows - jonatan.genruntimeconfig.cache
+/Users/jonatanvalovnikvolkov/Downloads/bulls and cows - jonatan/obj/Debug/net10.0/ref/bulls and cows - jonatan.dll

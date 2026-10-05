@@ -4,7 +4,6 @@ namespace bulls_and_cows___jonatan;
 
 public class BullsAndCowsGame
     {
-        // ---- Fields (private, hidden from outside the class) ----
         private const int CodeLength = 4;
         private readonly Random _random;
         private string _secretNumber;
@@ -13,7 +12,7 @@ public class BullsAndCowsGame
         public int AttemptCount { get; private set; }
         public bool IsGameOver { get; private set; }
 
-        // ---- Constructor ----
+
         public BullsAndCowsGame()
         {
             _random = new Random();

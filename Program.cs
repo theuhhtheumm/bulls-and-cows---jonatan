@@ -1,26 +1,18 @@
-﻿namespace bulls_and_cows___jonatan
-{
-      public class Program
+﻿namespace bulls_and_cows___jonatan;
+
+        
+    public class Program
     {
         public static void Main(string[] args)
         {
-            // Step 1: Create one BullsAndCowsGame object. Its constructor already picks a secret number.
+
             var game = new BullsAndCowsGame();
-
-            // Step 2: Create an empty list to hold GuessRecord objects (history for the current game).
-            var history = new List<GuessRecord>();
-
-            // Step 3: Print the welcome message and rules once.
             PrintWelcome();
-
-            // Step 4: Repeat forever (the main loop).
             while (true)
             {
-                // a. Print a prompt and read one line of text from the player.
-                Console.Write("\nEnter your guess (or q/quit, n/new, h/history): ");
+                Console.Write("Enter your guess (or q/quit, n/new): ");
                 string input = Console.ReadLine();
 
-                // b. If the text is empty, skip back to the top of the loop and ask again.
                 if (string.IsNullOrWhiteSpace(input))
                 {
                     continue;
@@ -39,17 +31,11 @@
                 if (IsNewGame(input))
                 {
                     game.StartNewGame();
-                    history.Clear();
                     Console.WriteLine("A new game has started. A fresh secret number has been picked!");
                     continue;
                 }
 
                 // e. Else if the text matches 'history' -> print every record in the history list.
-                if (IsHistory(input))
-                {
-                    PrintHistory(history);
-                    continue;
-                }
 
                 // f. Else if the game is already over -> tell the player to start a new game.
                 if (game.IsGameOver)
@@ -68,18 +54,8 @@
                 // h. If the guess is valid, call SubmitGuess and get back a GuessResult.
                 GuessResult result = game.SubmitGuess(input);
 
-                // i. Build a new GuessRecord from the result and add it to the history list.
-                var record = new GuessRecord
-                {
-                    AttemptNumber = game.AttemptCount,
-                    Guess = input,
-                    Bulls = result.Bulls,
-                    Cows = result.Cows
-                };
-                history.Add(record);
-
                 // j. Print the Bulls/Cows feedback.
-                Console.WriteLine($"Result: {record.Feedback}");
+                Console.WriteLine($"Result: {result.Feedback}");
 
                 // k. If the result is a winning guess, print a victory message with total attempts.
                 if (result.IsWinningGuess)
@@ -104,4 +80,40 @@
         /// <summary>
         /// Checks if the player's input matches the "new game" command, ignoring uppercase/lowercase.
         /// </summary>
-        private static bool IsN
+        private static bool IsNewGame(string input)
+        {
+            string text = input.ToLower();
+            return text == "n" || text == "new";
+        }
+
+        /// <summary>
+        /// Checks if the player's input matches the "history" command, ignoring uppercase/lowercase.
+        /// </summary>
+       
+
+        /// <summary>
+        /// Prints the game's title and a short explanation of the rules, once, when the program starts.
+        /// </summary>
+        private static void PrintWelcome()
+        {
+            Console.WriteLine("=========================================");
+            Console.WriteLine("           BULLS AND COWS GAME");
+            Console.WriteLine("=========================================");
+            Console.WriteLine("The computer has picked a secret 4-digit number.");
+            Console.WriteLine("All 4 digits are different, and it does not start with 0.");
+            Console.WriteLine("Try to guess it! For each guess you'll get:");
+            Console.WriteLine("  Bulls - digits that are correct AND in the correct position.");
+            Console.WriteLine("  Cows  - digits that are correct but in the wrong position.");
+            Console.WriteLine("You win when you score 4 Bulls.");
+            Console.WriteLine();
+            Console.WriteLine("Commands: 'q' or 'quit' to exit, 'n' or 'new' for a new game,");
+        }
+
+        /// <summary>
+        /// Prints every GuessRecord collected so far in a neat list.
+        /// </summary>
+        
+    }
+
+
+

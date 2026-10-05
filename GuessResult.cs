@@ -12,4 +12,5 @@ public class GuessResult
         /// it should not be set directly, just calculated from Bulls).
         /// </summary>
         public bool IsWinningGuess => Bulls == 4;
+        public string Feedback => $"{Bulls} Bulls, {Cows} Cows";
     }

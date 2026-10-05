@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "bulls and cows - jonatan/1.0.0": {
+        "runtime": {
+          "bulls and cows - jonatan.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "bulls and cows - jonatan/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
